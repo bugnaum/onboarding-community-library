@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500&family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Figtree", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --color-background: hsl(0 0% 99%);
+  --color-foreground: hsl(210 10% 15%);
+  --color-surface: hsl(0 0% 100%);
+  --color-border: hsl(210 15% 90%);
+  --color-ring: hsl(204 80% 45%);
+
+  --color-primary: hsl(204 80% 45%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-primary-hover: hsl(204 80% 40%);
+  --color-primary-active: hsl(204 80% 35%);
+
+  --color-secondary: hsl(204 80% 85%);
+  --color-secondary-foreground: hsl(204 80% 20%);
+  --color-secondary-hover: hsl(204 80% 80%);
+  --color-secondary-active: hsl(204 80% 75%);
+
+  --color-tertiary: hsl(180 25% 96%);
+  --color-tertiary-foreground: hsl(210 10% 20%);
+
+  --color-accent: hsl(30 90% 55%);
+  --color-accent-foreground: hsl(0 0% 100%);
+
+  --color-muted: hsl(210 15% 95%);
+  --color-muted-foreground: hsl(210 10% 35%);
+
+  --color-success: hsl(150 60% 40%);
+  --color-success-foreground: hsl(0 0% 100%);
+  --color-warning: hsl(40 95% 50%);
+  --color-warning-foreground: hsl(0 0% 10%);
+  --color-error: hsl(0 75% 50%);
+  --color-error-foreground: hsl(0 0% 100%);
+  --color-info: hsl(210 80% 50%);
+  --color-info-foreground: hsl(0 0% 100%);
+
+  --color-gray-50: hsl(210 20% 98%);
+  --color-gray-100: hsl(210 15% 95%);
+  --color-gray-200: hsl(210 15% 90%);
+  --color-gray-300: hsl(210 10% 80%);
+  --color-gray-400: hsl(210 10% 60%);
+  --color-gray-500: hsl(210 10% 45%);
+  --color-gray-600: hsl(210 10% 35%);
+  --color-gray-700: hsl(210 10% 25%);
+  --color-gray-800: hsl(210 10% 15%);
+  --color-gray-900: hsl(210 10% 10%);
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(204 80% 50%) 0%,
+    hsl(190 80% 45%) 100%
+  );
+  --gradient-secondary: linear-gradient(
+    135deg,
+    hsl(204 80% 85%) 0%,
+    hsl(204 80% 75%) 100%
+  );
+  --gradient-accent: linear-gradient(
+    135deg,
+    hsl(30 90% 55%) 0%,
+    hsl(20 90% 50%) 100%
+  );
+}
+
+@layer base {
+  html,
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  body {
+    @apply m-0 min-h-screen;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading text-foreground tracking-tight;
+  }
+
+  p,
+  span,
+  div,
+  label,
+  li,
+  td,
+  th,
+  input,
+  textarea,
+  button,
+  a {
+    @apply text-inherit;
+  }
+
+  a {
+    @apply text-primary;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+}

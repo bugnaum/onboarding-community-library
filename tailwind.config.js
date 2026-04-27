@@ -1,0 +1,78 @@
+module.exports = {
+  content: ["./src/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        background: "var(--color-background)",
+        foreground: "var(--color-foreground)",
+        surface: "var(--color-surface)",
+        border: "var(--color-border)",
+        ring: "var(--color-ring)",
+        primary: "var(--color-primary)",
+        "primary-foreground": "var(--color-primary-foreground)",
+        "primary-hover": "var(--color-primary-hover)",
+        "primary-active": "var(--color-primary-active)",
+        secondary: "var(--color-secondary)",
+        "secondary-foreground": "var(--color-secondary-foreground)",
+        "secondary-hover": "var(--color-secondary-hover)",
+        "secondary-active": "var(--color-secondary-active)",
+        tertiary: "var(--color-tertiary)",
+        "tertiary-foreground": "var(--color-tertiary-foreground)",
+        accent: "var(--color-accent)",
+        "accent-foreground": "var(--color-accent-foreground)",
+        muted: "var(--color-muted)",
+        "muted-foreground": "var(--color-muted-foreground)",
+        success: "var(--color-success)",
+        "success-foreground": "var(--color-success-foreground)",
+        warning: "var(--color-warning)",
+        "warning-foreground": "var(--color-warning-foreground)",
+        error: "var(--color-error)",
+        "error-foreground": "var(--color-error-foreground)",
+        info: "var(--color-info)",
+        "info-foreground": "var(--color-info-foreground)",
+        gray: {
+          50: "var(--color-gray-50)",
+          100: "var(--color-gray-100)",
+          200: "var(--color-gray-200)",
+          300: "var(--color-gray-300)",
+          400: "var(--color-gray-400)",
+          500: "var(--color-gray-500)",
+          600: "var(--color-gray-600)",
+          700: "var(--color-gray-700)",
+          800: "var(--color-gray-800)",
+          900: "var(--color-gray-900)",
+        },
+      },
+      fontFamily: {
+        sans: ['"Inter"', "sans-serif"],
+        heading: ['"Figtree"', "sans-serif"],
+        mono: ['"IBM Plex Mono"', "monospace"],
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-secondary": "var(--gradient-secondary)",
+        "gradient-accent": "var(--gradient-accent)",
+      },
+      borderRadius: {
+        md: "8px",
+        lg: "12px",
+      },
+      spacing: {
+        18: "4.5rem",
+      },
+      transitionTimingFunction: {
+        "ease-in-out-soft": "cubic-bezier(0.4, 0, 0.2, 1)",
+      },
+      animation: {
+        "fade-in-up": "fadeInUp 0.25s ease-in-out",
+      },
+      keyframes: {
+        fadeInUp: {
+          "0%": { opacity: "0", transform: "translateY(8px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
